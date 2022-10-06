@@ -1,0 +1,23 @@
+.cardBtn{  
+  width: 125px;
+  height: 180px;   
+  
+  &--bg_img1{
+    background-image: url('https://bit.ly/2OUteif');
+  };
+  .cardBtn--glass{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    background-color: $c_primary;
+    backdrop-filter: blur(5px);
+  };
+  .cardBtn--text{
+    writing-mode: vertical-lr;
+    font-size: $fz_lg;
+    color: $c_fifth;
+    letter-spacing: 5px;
+  }
+};

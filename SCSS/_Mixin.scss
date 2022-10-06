@@ -1,0 +1,21 @@
+﻿/*RWD*/
+@mixin mobile {
+    @media screen and (min-width : $sm) {
+        @content
+    }
+}
+@mixin pad {
+    @media screen and (min-width : $md) {
+        @content
+    }
+}
+@mixin laptop {
+    @media screen and (min-width : $lg) {
+        @content
+    }
+}
+@mixin table{
+    @media screen and (min-width : $xl){
+        @content
+    }
+}

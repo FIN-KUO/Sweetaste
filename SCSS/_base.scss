@@ -1,0 +1,21 @@
+﻿body,html {
+  max-width: 375px;
+  color : $c_base;
+  font-size: 16px;
+  font-family: map-get($font-family, light);
+};
+header{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  padding: 7.1015px 0 7.1015px 0;
+  a{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: $c_primary;
+  };
+  .i_logo{
+    width: 114.14px;
+  };  
+};

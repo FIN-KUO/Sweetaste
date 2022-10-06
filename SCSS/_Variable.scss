@@ -1,0 +1,29 @@
+﻿/*RWD*/
+$sm : 576px;
+$md : 768px;
+$lg : 992px;
+$xl : 1200px;
+
+/*color*/
+$c_base : #58595B;
+$c_primary : #3F5D45;
+$c_second : #FFE180;
+$c_third : #8DA291;
+$c_fourth : #EAF0ED;
+$c_fifth : #FFFFFF;
+
+/*font-family*/
+$font-family:
+(
+  light : "PingFang TC, Light",
+  Semibold : "PingFang TC, Semibold",
+  Helvetica : "Helvetica Neue, Regular"
+);
+
+/*font-size*/
+$fz_base : 1rem; /*16px*/
+$fz_lg : $fz_base * 1.25;/*20px*/
+$fz_xl : $fz_base * 1.5;/*24px*/
+
+$fz_h2 : $fz_base * 2.25;/*36px*/
+$fz_h3 : $fz_base * 1.5;/*24px*/
