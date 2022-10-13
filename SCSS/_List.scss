@@ -1,0 +1,60 @@
+.cardList{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 315px;
+    height: auto;
+    &__img{
+      height: 315px;      
+      position: relative;   
+      &--Featured{
+        width: 37.8px;
+        height: 106.73px;
+        position: absolute;
+        top: 0px;
+        left: 21px;
+        writing-mode: vertical-lr;
+        background: $c_primary;
+        color: $c_fifth;
+        font-weight: 900;
+        letter-spacing: 5px;
+        @include in-center;
+      }; 
+      &--Love{
+        position: absolute;
+        top: 19px;
+        right: 24.2px;
+        .fa-heart{
+          width: 20px;
+          color: $c_primary;
+        }
+
+      }
+    };
+    &__content{
+      width: 100%;
+      height: 56px;
+      display: flex;      
+      color: $c_primary;
+      &--col1{
+        width: 60%;          
+        border: 1px solid $c_fourth; 
+        @include in-center;
+      };
+      &--col2{
+        width: 40%;
+        font-weight: 900;         
+        border: 1px solid $c_fourth;
+        @include in-center;
+      };      
+    };
+    &__btn{
+      height: 65px;
+      width: 100%;
+      background: $c_fourth;
+      @include in-center;
+      h3{
+        color: $c_primary;
+      };
+    };
+};

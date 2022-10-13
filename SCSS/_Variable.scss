@@ -15,8 +15,7 @@ $c_fifth : #FFFFFF;
 /*font-family*/
 $font-family:
 (
-  light : "PingFang TC, Light",
-  Semibold : "PingFang TC, Semibold",
+  JhengHei : "Microsoft JhengHei",  
   Helvetica : "Helvetica Neue, Regular"
 );
 
@@ -27,3 +26,4 @@ $fz_xl : $fz_base * 1.5;/*24px*/
 
 $fz_h2 : $fz_base * 2.25;/*36px*/
 $fz_h3 : $fz_base * 1.5;/*24px*/
+$fz_h4 : $fz_base * 1.25;/*20px*/

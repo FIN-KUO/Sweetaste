@@ -1,21 +1,188 @@
-﻿body,html {
+﻿body {  
+  margin: 0 auto;
   max-width: 375px;
   color : $c_base;
   font-size: 16px;
-  font-family: map-get($font-family, light);
+  font-family: map-get($font-family, JhengHei);
+  img{
+    width: 100%;
+  };
 };
-header{
+
+.header__laptop{
+  display: none;
+}
+.header__phone{
   display: flex;
   flex-direction: row;
   justify-content: space-around;
   padding: 7.1015px 0 7.1015px 0;
-  a{
-    display: flex;
-    align-items: center;
-    justify-content: center;
+  a{    
     color: $c_primary;
+    @include in-center;
   };
   .i_logo{
     width: 114.14px;
   };  
+};
+@include laptop{
+  .header__phone{
+    display: none;
+  }  
+  body{
+    max-width: 1024px;
+  };
+  .header__laptop{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 0 42px;
+    a{    
+      color: $c_primary;
+      @include in-center;
+    };
+    .i_logo{
+      width: 171.22px;     
+    };
+    .logoArea{
+      @include in-center;
+      &_mark{
+        height: 40px;
+        width: 40px;
+      };
+    };
+    .navGroup{
+      display: flex;
+      &__link{
+        width: 215px;
+        display: flex;
+        justify-content: space-around;
+        font-weight: 900;
+        padding-right: 79px;
+      };
+      
+    };
+  };
+};
+footer{
+  width: 100%;
+  padding-top: 30px;
+  .ComEmail{   
+    @include in-center;
+    flex-direction: column;
+    background-color: $c_primary;
+    font-size: $fz_xl;
+    color: $c_fourth;
+    &__title{
+      @include in-center;
+      padding: 30px 0 30px 0;
+      img{
+        width: 40px;
+        padding-right: 20px;
+      };
+    };
+    &__input{
+      @include in-center;
+      width: 315px;
+      padding: 0 0 30px 0;
+      &--icon{
+        height: 56px;
+        width: 64px;
+        background: $c_fourth;
+        color: $c_primary;
+        @include in-center;
+      };
+      &--box{
+        height: 56px;
+        width: 187px;        
+        background: $c_fourth;
+      };
+      &--btn{
+        height: 56px;
+        width: 64px;
+        background: $c_second;
+        color: $c_primary;
+      };
+    };
+  };
+  .ComInformation{
+    padding-left: 30px;
+    background: $c_fourth;
+    font-family: map-get($font-family, Helvetica);;
+    &__logo{
+      width: 171.22px;    
+      padding: 2.383px 0;  
+    };
+    &__inf{      
+      display: flex;
+      flex-direction: column;
+      color: $c_primary;
+      line-height: 24px;
+    };
+    &__connection{      
+      padding: 37px 0 30px 0;
+      line-height: 19px;
+      color: $c_primary;
+      &--app{
+        padding-bottom: 23px;
+        img{
+          height: 32px;
+          width: 32px;
+        };
+      };      
+    };
+    &__text{
+      display: none;
+    };
+  };
+};
+@include laptop{
+  footer{
+    padding-top: 60px;
+    .ComEmail{
+      flex-direction: row;
+      &__title{
+        padding: 38px 124px 38px 0;        
+      };
+      &__input{
+        padding: 0px;
+        width: 380px;
+        &--box{
+          width: 252px;        
+        };
+      };
+    };
+    .ComInformation{
+      padding-left: 122px;
+      position: relative;
+      &__inf{      
+        padding-top: 76px;
+      };
+      &__connection{      
+        padding: 30px 0 30px 0;
+        display: flex;
+        align-items: flex-end;
+        &--app{
+          padding-bottom: 0px;
+          padding-right: 450px;
+        };        
+      };
+      &__text{
+        width: 59.28px;
+        display: block;
+        position: absolute;
+        top: 30px;
+        right: 121.72px;
+      };
+    };
+  };
+};
+h2{
+  font-size: $fz_h2;
+};
+h3{
+  font-size: $fz_h3;
+};
+h4{
+  font-size: $fz_h4;
 };

@@ -1,17 +1,48 @@
+.BtnGroup{
+  &__row{    
+    display: flex;
+    flex-direction: row;   
+    // 相鄰元素才加樣式
+    a + a {
+      margin-left: 1px;
+    }; 
+  };
+  &__colum{
+    display: flex;
+    flex-direction: column;
+  };
+  
+};
 .cardBtn{  
   width: 125px;
-  height: 180px;   
-  
+  height: 180px;  
+  background-size: 100% 100%;
   &--bg_img1{
-    background-image: url('https://bit.ly/2OUteif');
+    background-image: url('../img/topic_1.jpg');    
+  };
+  &--bg_img2{
+    background-image: url('../img/topic_2.jpg');    
+  };
+  &--bg_img3{
+    background-image: url('../img/topic_3.jpg');    
   };
   .cardBtn--glass{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-    height: 100%;
-    background-color: $c_primary;
+    position: absolute;    
+    width: 125px;
+    height: 180px; 
+    @include in-center;           
+  };
+  .cardBtn--over{
+    position: absolute;
+    background: $c_primary;
+    opacity: 0.8;
+    width: 125px;
+    height: 180px;
+    &_active{
+      background: $c_second !important;
+    };
+  };  
+  .filter--blur{
     backdrop-filter: blur(5px);
   };
   .cardBtn--text{
@@ -19,5 +50,35 @@
     font-size: $fz_lg;
     color: $c_fifth;
     letter-spacing: 5px;
+    &_active{
+      color: $c_primary !important;
+      font-weight: 900 !important;
+    };
   }
+  &:hover{
+    .cardBtn--over{
+      background: $c_second;
+    };
+    .cardBtn--text{
+      color: $c_primary;
+      font-weight: 900;
+    };
+  };  
+};
+@include laptop{
+  .BtnGroup{    
+    padding-bottom: 80px;
+  };
+  .cardBtn{
+    width: 259.67px;
+    height: 256px;
+    position: relative;
+    bottom: 80px;
+    left: 123px;
+    .cardBtn--glass,.cardBtn--over{
+      width: 259.67px;
+      height: 256px;
+    };
+  };
+  
 };
