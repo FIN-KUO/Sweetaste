@@ -536,8 +536,17 @@ h4 {
   box-sizing: border-box;
 }
 
-.banner img {
+.banner {
+  position: relative;
+}
+.banner .bg_img {
   height: 277px;
+}
+.banner .text_img {
+  width: 50.41px;
+  position: absolute;
+  top: 30px;
+  right: 30px;
 }
 
 .content {
@@ -549,10 +558,15 @@ h4 {
   .container {
     padding: 0 42px;
   }
-  .banner img {
+  .banner .bg_img {
     height: 496px;
     -o-object-fit: cover;
        object-fit: cover;
+  }
+  .banner .text_img {
+    width: 89px;
+    top: 40px;
+    right: 40px;
   }
   .content {
     flex-direction: row;
@@ -629,7 +643,7 @@ h4 {
     padding: 70px 68px 70px 20px;
   }
   .articleCard__word .p2 {
-    padding: 70px 20px 70px 43px;
+    padding: 70px 20px 70px 0px;
   }
   .articleCard .order1 {
     order: 1;

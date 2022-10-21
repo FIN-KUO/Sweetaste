@@ -3,8 +3,15 @@
   box-sizing: border-box;
 };
 .banner{
-  img{
+  position: relative;
+  .bg_img{
     height: 277px;
+  };
+  .text_img{
+    width: 50.41px;
+    position: absolute;
+    top: 30px;
+    right: 30px;
   };
 };
 .content{
@@ -16,9 +23,14 @@
     padding: 0 42px;
   };
   .banner{
-    img{
+    .bg_img{
       height: 496px;
       object-fit: cover;
+    };
+    .text_img{
+      width: 89px;
+      top: 40px;
+    right: 40px;
     };
   };
   .content{
@@ -95,7 +107,7 @@
         padding: 70px 68px 70px 20px;
       };
       .p2{
-        padding: 70px 20px 70px 43px;
+        padding: 70px 20px 70px 0px;
       };
     };
     .order1{
