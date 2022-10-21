@@ -53,6 +53,7 @@
     };
     .navGroup{
       display: flex;
+      justify-content: space-between;
       &__link{
         width: 215px;
         display: flex;
@@ -66,7 +67,6 @@
 };
 footer{
   width: 100%;
-  padding-top: 30px;
   .ComEmail{   
     @include in-center;
     flex-direction: column;
@@ -138,7 +138,7 @@ footer{
 };
 @include laptop{
   footer{
-    padding-top: 60px;
+    padding-top: 30px;
     .ComEmail{
       flex-direction: row;
       &__title{
@@ -169,7 +169,7 @@ footer{
       };
       &__text{
         width: 59.28px;
-        display: block;
+        display: flex;
         position: absolute;
         top: 30px;
         right: 121.72px;

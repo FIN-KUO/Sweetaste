@@ -4,6 +4,7 @@
     align-items: center;
     width: 315px;
     height: auto;
+    margin-bottom: 30px;
     &__img{
       height: 315px;      
       position: relative;   
@@ -57,4 +58,72 @@
         color: $c_primary;
       };
     };
+};
+@include laptop{
+  .cardList{
+    width: 300px;
+    &__img{
+      img{
+        height: 315px;
+      };
+      &--Featured{
+        width: 36px;
+      };
+    };
+  };
+};
+.navList{
+  margin-bottom: 30px;
+  .box{
+    @include in-center;  
+    height: 65px; 
+    line-height: 40px;
+    font-weight: bold;
+  }
+  &__title{   
+    background: $c_primary;
+    color: $c_fifth;
+  };
+  &__item{
+    font-size: $fz_xl;
+    color: $c_primary;
+    border: 1px solid $c_fourth;
+    box-sizing: border-box;
+    &-active{
+      background: $c_fourth;
+    };
+  };
+  
+};
+@include laptop{
+  .navList{
+    margin-right: 20px;
+    .box{
+      width: 300px;
+
+    };
+  };
+};
+.pageList{
+  @include in-center;
+  margin-bottom: 30px;
+  .box{
+    @include in-center;
+    height: 60px;
+    width: 60px;
+    color: $c_primary;
+    border: 1px solid $c_fourth;
+  };
+  &__item{
+    font-size: $fz_lg;
+    &-active{
+      background: $c_primary;
+      color: $c_fifth !important;
+    };
+  };
+};
+@include laptop{
+  .pageList{
+    justify-content: flex-end;
+  };
 };

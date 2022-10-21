@@ -7,12 +7,23 @@
     height: 277px;
   };
 };
+.content{
+  display: flex;
+  flex-direction: column;
+};
 @include laptop{
+  .container{
+    padding: 0 42px;
+  };
   .banner{
     img{
       height: 496px;
       object-fit: cover;
     };
+  };
+  .content{
+    flex-direction: row;
+    margin-top: 60px;
   };
 };
 .articleCard{
@@ -25,6 +36,9 @@
       display: flex;
     }; 
     &--laptop{
+      display: none;
+    };
+    &--laptop2{
       display: none;
     };
   };
@@ -45,17 +59,12 @@
     };
   };
 };
-.CardGroup{
-  width: 100%;
-  display: flex;
-  justify-content: center;
-};
+
 @include laptop{
   .articleCard{
     flex-direction: row-reverse;
-    height: 420px;
-    background: $c_fourth;
-    margin-bottom: 95px;
+    height: 420px;    
+    margin-bottom: 95px;  
     &__txtPic{   
       &--iphone{        
         display: none;
@@ -63,17 +72,20 @@
       &--laptop{
         display: flex;
         width: 89px;
-        background: $c_fourth;
-        order: 1;
+        position: relative;
+        bottom: 78px;
+        right: 42px;
+      };
+      &--laptop2{
+        display: flex;
+        width: 89px;        
       };
     };
     &__Pic{
-      order: 3;
       height: 460px;
       width: 460px;      
     };
     &__word{
-      order: 2;
       display: flex;
       flex-direction: column;
       writing-mode: vertical-rl;
@@ -86,5 +98,29 @@
         padding: 70px 20px 70px 43px;
       };
     };
+    .order1{
+      order: 1;
+    };
+    .order2{
+      order: 2;
+    };
+    .order3{
+      order: 3;
+    };
+  };
+  .bgColor{
+    background: $c_fourth;
+  };
+};
+.CardGroup{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+};
+@include laptop{
+  .CardGroup{
+    flex-direction: row;    
+    justify-content: space-between;
   };
 };
