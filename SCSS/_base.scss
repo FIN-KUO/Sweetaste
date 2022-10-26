@@ -1,11 +1,13 @@
 ﻿body {  
-  margin: 0 auto;
-  max-width: 375px;
   color : $c_base;
   font-size: 16px;
   font-family: map-get($font-family, JhengHei);
+  box-sizing: border-box;
   img{
     width: 100%;
+  };
+  ::placeholder {
+    color: $c_third;
   };
 };
 
@@ -29,9 +31,6 @@
   .header__phone{
     display: none;
   }  
-  body{
-    max-width: 1024px;
-  };
   .header__laptop{
     display: flex;
     flex-direction: row;
@@ -70,9 +69,10 @@ footer{
   .ComEmail{   
     @include in-center;
     flex-direction: column;
-    background-color: $c_primary;
+    background: $c_primary;
     font-size: $fz_xl;
     color: $c_fourth;
+    padding: 0 0 30px 0;
     &__title{
       @include in-center;
       padding: 30px 0 30px 0;
@@ -80,30 +80,7 @@ footer{
         width: 40px;
         padding-right: 20px;
       };
-    };
-    &__input{
-      @include in-center;
-      width: 315px;
-      padding: 0 0 30px 0;
-      &--icon{
-        height: 56px;
-        width: 64px;
-        background: $c_fourth;
-        color: $c_primary;
-        @include in-center;
-      };
-      &--box{
-        height: 56px;
-        width: 187px;        
-        background: $c_fourth;
-      };
-      &--btn{
-        height: 56px;
-        width: 64px;
-        background: $c_second;
-        color: $c_primary;
-      };
-    };
+    };    
   };
   .ComInformation{
     padding-left: 30px;
@@ -138,22 +115,16 @@ footer{
 };
 @include laptop{
   footer{
-    padding-top: 30px;
+    padding-top: 60px;
     .ComEmail{
       flex-direction: row;
+      padding: 0;
       &__title{
         padding: 38px 124px 38px 0;        
-      };
-      &__input{
-        padding: 0px;
-        width: 380px;
-        &--box{
-          width: 252px;        
-        };
-      };
+      };      
     };
     .ComInformation{
-      padding-left: 122px;
+      padding-left: 164px;
       position: relative;
       &__inf{      
         padding-top: 76px;
@@ -172,7 +143,7 @@ footer{
         display: flex;
         position: absolute;
         top: 30px;
-        right: 121.72px;
+        right: 164px;
       };
     };
   };
@@ -185,4 +156,11 @@ h3{
 };
 h4{
   font-size: $fz_h4;
+};
+/*bg color*/
+.bg-primary{
+  background: $c_primary;
+};
+.bg-fourth{
+  background: $c_fourth;
 };

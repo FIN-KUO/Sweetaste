@@ -4,7 +4,7 @@
     align-items: center;
     width: 315px;
     height: auto;
-    margin-bottom: 30px;
+    padding-bottom: 30px;
     &__img{
       height: 315px;      
       position: relative;   
@@ -62,6 +62,7 @@
 @include laptop{
   .cardList{
     width: 300px;
+    padding-bottom: 20px;
     &__img{
       img{
         height: 315px;
@@ -106,7 +107,7 @@
 };
 .pageList{
   @include in-center;
-  margin-bottom: 30px;
+  padding-bottom: 30px;
   .box{
     @include in-center;
     height: 60px;
@@ -124,6 +125,9 @@
 };
 @include laptop{
   .pageList{
+    padding-top: 10px;
     justify-content: flex-end;
+    padding-bottom: 0px;
   };
 };
+

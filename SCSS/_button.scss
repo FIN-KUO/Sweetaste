@@ -82,3 +82,59 @@
   };
   
 };
+.inputBtn{
+  @include in-center;
+  width: 315px;
+  &__icon{
+    height: 56px;
+    width: 64px;
+    background: $c_fourth;
+    color: $c_primary;
+    @include in-center;
+  };
+  &__box{            
+    background: $c_fourth;
+    color: $c_third;
+    height: 56px;
+    &--sm{      
+      width: 187px;
+    };
+    &--lg{
+      width: 251px;
+    };    
+  };
+  &__btn{
+    background: $c_second;
+    color: $c_primary;
+    &--sm{
+      height: 56px;
+      width: 64px;  
+    };
+    &--lg{
+      height: 65px;
+      width: 375px;
+      font-size: $fz_xl;
+      font-weight: 900;
+    };
+  };
+
+};
+@include laptop{
+  .inputBtn{
+    width: auto;
+    justify-content: flex-start;
+    &__box{
+      &--sm{
+        width: 252px;
+      };      
+      &--lg{
+        width: 266px;
+      };        
+    };
+    &__btn{
+      &--lg{
+        width: 390px;
+      };
+    };
+  };
+};

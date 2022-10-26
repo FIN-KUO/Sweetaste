@@ -9,12 +9,12 @@
   <script src="https://kit.fontawesome.com/a7b6f85b98.js" crossorigin="anonymous"></script>
 </head>
 <body>  
-  <header class="header__phone">
+  <header class="container header__phone">
     <a href="#"><i class="fa-solid fa-bars"></i></a>
     <h1><img class="i_logo" src="./img/logotype.png"></h1>
     <a href="#"><i class="fa-solid fa-cart-shopping"></i></a>
   </header>
-  <header class="header__laptop">
+  <header class="container header__laptop">
     <h1 class="logoArea">
       <img class="logoArea_mark" src="./img/logo-dark.png">
       <img class="i_logo" src="./img/logotype.png">
@@ -23,9 +23,9 @@
       <div class="navGroup__link">
         <a href="./index.html">首頁</a>
         <a href="./product.html">甜點</a>
-        <a href="">登入</a>      
+        <a href="./login.html">登入</a>      
       </div>
-      <a class="navGroup__cart" href=""><i class="fa-solid fa-cart-shopping"></i></a>
+      <a class="navGroup__cart" href="./cart.html"><i class="fa-solid fa-cart-shopping"></i></a>
     </div>    
   </header>
   <main>
@@ -46,24 +46,28 @@
         <div class="cardBtn--glass filter--blur"><span class="cardBtn--text">新品上市</span></div>
       </a>
     </div>
-    <section class="articleCard bgColor">
-      <img class="articleCard__txtPic--iphone" src="./img/sm-為什麼選擇了做甜點.png">
-      <img class="articleCard__txtPic--laptop order1" src="./img/lg-為什麼選擇了做甜點.png">
-      <img class="articleCard__Pic order3" src="./img/reason2.jpg">
-      <div class="articleCard__word order2">
-        <p class="p1">青山依舊在，幾度夕陽紅。慣看秋月春風。一壺濁酒喜相逢，浪花淘盡英雄。是非成敗轉頭空，滾滾長江東逝水，白髮漁樵江渚上，古今多少事，都付笑談中。</p>
-        <p class="p2">是非成敗轉頭空，青山依舊在，幾度夕陽紅。白髮漁樵江渚上，古今多少事，都付笑談中。</p>
-      </div>
-    </section>
-    <section class="articleCard bgColor">
-      <img class="articleCard__txtPic--iphone" src="./img/sm-為什麼一定要吃甜點.png">
-      <img class="articleCard__txtPic--laptop order2" src="./img/lg-為什麼一定要吃甜點.png">
-      <img class="articleCard__Pic order1" src="./img/reason1.jpg">
-      <div class="articleCard__word order3">
-        <p class="p1">青山依舊在，幾度夕陽紅。慣看秋月春風。一壺濁酒喜相逢，浪花淘盡英雄。是非成敗轉頭空，滾滾長江東逝水，白髮漁樵江渚上，古今多少事，都付笑談中。</p>
-        <p class="p2">是非成敗轉頭空，青山依舊在，幾度夕陽紅。白髮漁樵江渚上，古今多少事，都付笑談中。</p>
-      </div>
-    </section>
+    <div class="bg-fourth">
+      <section class="container articleCard bgColor">
+        <img class="articleCard__txtPic--iphone" src="./img/sm-為什麼選擇了做甜點.png">
+        <img class="articleCard__txtPic--laptop order1" src="./img/lg-為什麼選擇了做甜點.png">
+        <img class="articleCard__Pic order3" src="./img/reason2.jpg">
+        <div class="articleCard__word order2">
+          <p class="p1">青山依舊在，幾度夕陽紅。慣看秋月春風。一壺濁酒喜相逢，浪花淘盡英雄。是非成敗轉頭空，滾滾長江東逝水，白髮漁樵江渚上，古今多少事，都付笑談中。</p>
+          <p class="p2">是非成敗轉頭空，青山依舊在，幾度夕陽紅。白髮漁樵江渚上，古今多少事，都付笑談中。</p>
+        </div>
+      </section>
+    </div>    
+    <div class="bg-fourth">
+      <section class="container articleCard bgColor">
+        <img class="articleCard__txtPic--iphone" src="./img/sm-為什麼一定要吃甜點.png">
+        <img class="articleCard__txtPic--laptop order2" src="./img/lg-為什麼一定要吃甜點.png">
+        <img class="articleCard__Pic order1" src="./img/reason1.jpg">
+        <div class="articleCard__word order3">
+          <p class="p1">青山依舊在，幾度夕陽紅。慣看秋月春風。一壺濁酒喜相逢，浪花淘盡英雄。是非成敗轉頭空，滾滾長江東逝水，白髮漁樵江渚上，古今多少事，都付笑談中。</p>
+          <p class="p2">是非成敗轉頭空，青山依舊在，幾度夕陽紅。白髮漁樵江渚上，古今多少事，都付笑談中。</p>
+        </div>
+      </section>
+    </div>    
     <section class="articleCard">
       <img class="articleCard__txtPic--iphone" src="./img/sm-想吃甜點是不需要理由的-1.png">  
       <img class="articleCard__txtPic--laptop2" src="./img/lg-想吃甜點是不需要理由的.png">    
@@ -81,36 +85,64 @@
         </li>
         <li class="cardList__btn"><a href=""><h3>加入購物車</h3></a></li>
       </ul>
+      <ul class="cardList">
+        <li class="cardList__img">
+          <img src="./img/item1.jpg">
+          <span class="cardList__img--Featured">本日精選</span>
+          <span class="cardList__img--Love"><a href="#"><i class="fa-regular fa-heart"></i></a></span>
+        </li>
+        <li class="cardList__content">
+          <h4 class="cardList__content--col1">焦糖瑪卡龍</h4>
+          <h4 class="cardList__content--col2">NT$ 450</h4>
+        </li>
+        <li class="cardList__btn"><a href=""><h3>加入購物車</h3></a></li>
+      </ul>
+      <ul class="cardList">
+        <li class="cardList__img">
+          <img src="./img/item1.jpg">
+          <span class="cardList__img--Featured">本日精選</span>
+          <span class="cardList__img--Love"><a href="#"><i class="fa-regular fa-heart"></i></a></span>
+        </li>
+        <li class="cardList__content">
+          <h4 class="cardList__content--col1">焦糖瑪卡龍</h4>
+          <h4 class="cardList__content--col2">NT$ 450</h4>
+        </li>
+        <li class="cardList__btn"><a href=""><h3>加入購物車</h3></a></li>
+      </ul>
     </section>
   </main>
   <footer>
-    <ul class="ComEmail">
-      <li class="ComEmail__title">
-        <img src="./img/logo-light.png" alt="">
-        訂閱你我的甜蜜郵件
-      </li>
-      <li class="ComEmail__input">        
-        <span class="ComEmail__input--icon"><i class="fa-solid fa-envelope"></i></span>
-        <input class="ComEmail__input--box" type="email" name="" id="">        
-        <button class="ComEmail__input--btn"><i class="fa-sharp fa-solid fa-arrow-right"></i></button>
-      </li>
-    </ul>
-    <section class="ComInformation">
-      <img class="ComInformation__logo" src="./img/logotype.png" alt="">
-      <div class="ComInformation__inf">
-        <label for="">07-1234-5678</label>
-        <label for="">sweetaste@email.com</label>
-        <label for="">800 高雄市新興區幸福路 520 號</label>
-      </div>
-      <div class="ComInformation__connection">
-        <div class="ComInformation__connection--app">
-          <a href="#"><img src="./img/ic-line@.png" alt=""></a>
-          <a href="#"><img src="./img/ic-facebook.png" alt=""></a>
+    <div class="bg-primary">
+      <ul class="container ComEmail">
+        <li class="ComEmail__title">
+          <img src="./img/logo-light.png" alt="">
+          訂閱你我的甜蜜郵件
+        </li>
+        <li class="inputBtn">        
+          <span class="inputBtn__icon"><i class="fa-solid fa-envelope"></i></span>
+          <input class="inputBtn__box inputBtn__box--sm" type="email" name="" id="">        
+          <button class="inputBtn__btn inputBtn__btn--sm"><i class="fa-sharp fa-solid fa-arrow-right"></i></button>
+        </li>
+      </ul>
+    </div>
+    <div class="bg-fourth">
+      <section class="container ComInformation">
+        <img class="ComInformation__logo" src="./img/logotype.png" alt="">
+        <div class="ComInformation__inf">
+          <label for="">07-1234-5678</label>
+          <label for="">sweetaste@email.com</label>
+          <label for="">800 高雄市新興區幸福路 520 號</label>
         </div>
-        <label for="">© 2018 Sweetaste* All Rights Reserved</label>
-      </div>
-      <img class="ComInformation__text" src="./img/sm-今天是個吃甜點的好日子.png" alt="">
-    </section>
+        <div class="ComInformation__connection">
+          <div class="ComInformation__connection--app">
+            <a href="#"><img src="./img/ic-line@.png" alt=""></a>
+            <a href="#"><img src="./img/ic-facebook.png" alt=""></a>
+          </div>
+          <label for="">© 2018 Sweetaste* All Rights Reserved</label>
+        </div>
+        <img class="ComInformation__text" src="./img/sm-今天是個吃甜點的好日子.png" alt="">
+      </section>
+    </div>    
   </footer>
 </body>
 </html>
