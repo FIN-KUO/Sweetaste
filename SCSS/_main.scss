@@ -225,3 +225,40 @@
     };
   };
 };
+.cart{
+  @include in-center;
+  flex-direction: column;
+  &__title{
+    @include caption($c_fourth , $c_primary , 100%);
+    margin-bottom: 30px;
+  };
+};
+.orderSubtotal{
+  @include in-center;
+  flex-direction: column;
+  color: $c_primary;
+  &__title{
+    @include caption($c_fourth , $c_primary , 315px);
+    margin-bottom: 12px;
+  };
+  &__price{
+    width: 315px;
+    display: flex;
+    justify-content: space-between;
+    line-height: 22px;
+    padding: 4px 0;
+    &--tol{
+      font-size: $fz_lg;
+      font-weight: 900;
+      line-height: 28px;
+      padding: 12px 0 16px 0;
+    };
+  };
+};
+@include laptop{
+  .cart{
+    &__title{
+      width: 620px;
+    };
+  };
+};

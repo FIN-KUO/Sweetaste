@@ -25,3 +25,13 @@
     justify-content: center;
     align-items: center;
 };
+
+@mixin caption($bg_color , $color , $width){
+    @include in-center;
+    height: 65px;
+    width: $width;
+    font-size: $fz_xl;
+    font-weight: 900;
+    background: $bg_color;
+    color: $color;
+  };

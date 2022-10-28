@@ -572,6 +572,68 @@ h4 {
     padding-bottom: 0px;
   }
 }
+.cartList {
+  padding-bottom: 30px;
+}
+.cartList__part1 {
+  display: flex;
+}
+.cartList__part1 img {
+  widows: 157px;
+  height: 106px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.cartList__part1--text {
+  padding-left: 16px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.cartList__product {
+  display: flex;
+  flex-direction: column;
+  color: #3F5D45;
+}
+.cartList__product--name {
+  font-size: 1.25rem;
+  line-height: 28px;
+}
+.cartList__product--uniPrice {
+  line-height: 22px;
+}
+.cartList__product--tolPrice {
+  color: #3F5D45;
+  font-size: 1.25rem;
+  line-height: 28px;
+  font-weight: 900;
+  padding: 11px 0;
+}
+.cartList__count {
+  display: flex;
+}
+.cartList__count--btn {
+  width: 48px;
+  height: 48px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: #3F5D45;
+  border: 1px solid #EAF0ED;
+}
+.cartList__part2 {
+  border-width: 1px 0;
+  border-color: #EAF0ED;
+  border-style: solid;
+  margin-top: 4px;
+  display: flex;
+  justify-content: flex-end;
+}
+.cartList__part2--del {
+  display: none;
+}
+
 .container {
   width: 375px;
   margin: 0 auto;
@@ -804,5 +866,62 @@ h4 {
   }
   .fromGroup__app--laptop .img_yahoo {
     width: 97px;
+  }
+}
+.cart {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.cart__title {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 65px;
+  width: 100%;
+  font-size: 1.5rem;
+  font-weight: 900;
+  background: #EAF0ED;
+  color: #3F5D45;
+  margin-bottom: 30px;
+}
+
+.orderSubtotal {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  color: #3F5D45;
+}
+.orderSubtotal__title {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 65px;
+  width: 315px;
+  font-size: 1.5rem;
+  font-weight: 900;
+  background: #EAF0ED;
+  color: #3F5D45;
+  margin-bottom: 12px;
+}
+.orderSubtotal__price {
+  width: 315px;
+  display: flex;
+  justify-content: space-between;
+  line-height: 22px;
+  padding: 4px 0;
+}
+.orderSubtotal__price--tol {
+  font-size: 1.25rem;
+  font-weight: 900;
+  line-height: 28px;
+  padding: 12px 0 16px 0;
+}
+
+@media screen and (min-width: 992px) {
+  .cart__title {
+    width: 620px;
   }
 }/*# sourceMappingURL=all.css.map */

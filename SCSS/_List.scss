@@ -131,3 +131,61 @@
   };
 };
 
+.cartList{
+  padding-bottom: 30px;
+  &__part1{
+    display: flex;
+    img{
+      widows: 157px;
+      height: 106px;
+      object-fit: cover;
+    };
+    &--text{
+      padding-left: 16px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    };
+  };
+  &__product{
+    display: flex;
+    flex-direction: column;
+    color: $c_primary;
+    &--name{
+      font-size: $fz_lg;
+      line-height: 28px;
+    };
+    &--uniPrice{
+      line-height: 22px;
+    };
+    &--tolPrice{
+      color: $c_primary;
+      font-size: $fz_lg;
+      line-height: 28px;
+      font-weight: 900;
+      padding: 11px 0;
+    };
+  };
+  &__count{
+    display: flex;
+    &--btn{
+      width: 48px;
+      height: 48px;
+      @include in-center;
+      text-align: center;
+      color: $c_primary;
+      border: 1px solid $c_fourth;
+    };
+  };
+  &__part2{
+    border-width: 1px 0;
+    border-color: $c_fourth;
+    border-style: solid;
+    margin-top: 4px;
+    display: flex;
+    justify-content: flex-end;
+    &--del{
+      display: none
+    };
+  };
+};
