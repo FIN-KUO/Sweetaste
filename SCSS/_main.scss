@@ -254,11 +254,35 @@
       padding: 12px 0 16px 0;
     };
   };
+  .inputBtn__btn{
+    width: 375px;
+    height: 65px;
+    font-size: $fz_xl;
+    font-weight: 900;
+  };
 };
 @include laptop{
   .cart{
     &__title{
       width: 620px;
+      margin-bottom: 13px;
+    };
+  };
+  .orderSubtotal{
+    background: $c_primary;
+    height: 258px;
+    width: 300px;
+    color: $c_fourth;
+    margin-left: 20px;
+    &__title{
+      @include caption($c_primary , $c_fourth , 260px);
+      border-bottom: 1px solid $c_fourth;
+    };
+    &__price{
+      width: 260px;
+    };
+    .inputBtn__btn{
+      width: 300px;
     };
   };
 };
